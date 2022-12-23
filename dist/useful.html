@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>bonfuse</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="styles.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
@@ -119,11 +120,11 @@
 						<section class="subscribe mt120"><img class="subscribe__img" src="assets/images/subscribe.jpeg" alt="" />
 							<div class="subscribe__col">
 								<h2 class="subscribe__ttl">Подпишитесь и станьте экспертом в кофе</h2>
-								<form class="subscribe__form"><label class="form-label"><span class="form-placeholder">E-mail</span><input class="form-input" type="email" /></label><input class="button black" type="submit" value="Подписаться" /><label class="checkbox__label">
+								<form class="subscribe__form" data-parsley-validate="data-parsley-validate"><label class="form-label"><span class="form-placeholder">E-mail</span><input class="form-input" type="email" required="required" /></label><input class="button black subscribe__submit" type="submit" value="Подписаться" /><label class="checkbox__label">
 										<div class="checkbox black"><input class="checkbox__input" type="checkbox" /><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect width="23" height="23" rx="4" fill="black"></rect>
 												<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+											</svg></div><span class="checkbox__caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
 									</label></form>
 							</div>
 						</section>
@@ -190,6 +191,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="modals"></div>
 	</body>
 
 </html>

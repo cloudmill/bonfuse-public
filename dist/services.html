@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>bonfuse</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="styles.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
@@ -64,21 +65,30 @@
 							<div class="services-item">
 								<div class="services-item__col">
 									<div class="services-item__ttl">Выездное обучение бариста</div>
-									<div class="services-item__txt">Наш бариста посещает заведение клиента и обучает сотрудников правильному приготовлению напитков, настройке помола, дает рекомендации по правильной эксплуатации оборудования.</div><button class="button black services-item__button">Заказать услугу</button>
-								</div><img class="services-item__img" src="assets/images/service-1.jpeg" alt="">
+									<div class="services-item__txt">Наш бариста посещает заведение клиента и обучает сотрудников правильному приготовлению напитков, настройке помола, дает рекомендации по правильной эксплуатации оборудования.</div><button class="button black services-item__button" data-fancy-button="service">Заказать услугу</button>
+								</div>
+								<picture class="services-item__img">
+									<source srcset="assets/images/webp/service-1.webp" type="image/webp" /><img src="assets/images/service-1.jpeg" alt="" />
+								</picture>
 							</div>
 							<div class="services-item">
 								<div class="services-item__col">
 									<div class="services-item__ttl">Сервис кофейного оборудования</div>
-									<div class="services-item__txt">Наш техник осуществляет выездное обслуживание кофейного оборудования на вашу территорию. &lt;br/&gt; &lt;br/&gt; Услуга требуется клиентам, у которых по тем или иным причинам есть проблемы с работой кофейного оборужования или же требуется плановое обслуживание (чистка, декальцинация, замена жерновов кофемолки и тд).</div><button class="button black services-item__button">Заказать услугу</button>
-								</div><img class="services-item__img" src="assets/images/service-2.jpeg" alt="">
+									<div class="services-item__txt">Наш техник осуществляет выездное обслуживание кофейного оборудования на вашу территорию. &lt;br/&gt; &lt;br/&gt; Услуга требуется клиентам, у которых по тем или иным причинам есть проблемы с работой кофейного оборужования или же требуется плановое обслуживание (чистка, декальцинация, замена жерновов кофемолки и тд).</div><button class="button black services-item__button" data-fancy-button="service">Заказать услугу</button>
+								</div>
+								<picture class="services-item__img">
+									<source srcset="assets/images/webp/service-2.webp" type="image/webp" /><img src="assets/images/service-2.jpeg" alt="" />
+								</picture>
 							</div>
 							<div class="services-item">
 								<div class="services-item__col">
 									<div class="services-item__ttl">Продукция СТМ</div>
 									<div class="services-item__note">СТМ — Собственная Торговая Марка</div>
-									<div class="services-item__txt">Услуга может быть полезной тем клиентам, которым необходима продукция по собственному техническому заданию или в своей индивидуальной упаковке. В рамках данной услуги мы изучаем потребность, формируем ТЗ, заказываем упаковку для клиента, производим продукцию, складируем на наших складах и организуем логистику.</div><button class="button black services-item__button">Заказать услугу</button>
-								</div><img class="services-item__img" src="assets/images/service-3.jpeg" alt="">
+									<div class="services-item__txt">Услуга может быть полезной тем клиентам, которым необходима продукция по собственному техническому заданию или в своей индивидуальной упаковке. В рамках данной услуги мы изучаем потребность, формируем ТЗ, заказываем упаковку для клиента, производим продукцию, складируем на наших складах и организуем логистику.</div><button class="button black services-item__button" data-fancy-button="service">Заказать услугу</button>
+								</div>
+								<picture class="services-item__img">
+									<source srcset="assets/images/webp/service-3.webp" type="image/webp" /><img src="assets/images/service-3.jpeg" alt="" />
+								</picture>
 							</div>
 						</div>
 					</section>
@@ -141,6 +151,24 @@
 						<div class="grid-test__col"></div>
 						<div class="grid-test__col"></div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modals">
+			<div class="modal service-modal" data-fancy-modal="service">
+				<div class="service-modal__main">
+					<div class="h2">Заказать услугу</div>
+					<div class="service-modal__subtitle">Выездное обучение бариста</div>
+					<form class="service-modal__form" data-parsley-validate data-service-form><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Имя</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input required><span class="form-placeholder">Телефон</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Отправить"></form>
+				</div>
+				<div class="service-modal__response">
+					<div class="h2">Вопрос отправлен</div>
+					<div class="service-modal__response-txt">Наш менеджер свяжется с вами<br>через 15 минут</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
 				</div>
 			</div>
 		</div>
