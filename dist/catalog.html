@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<title>bonfuse</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script defer="defer" src="assets/vendor.js"></script>
+		<script defer="defer" src="assets/app.js"></script>
+		<link href="styles.css" rel="stylesheet">
+		<link href="app.css" rel="stylesheet">
+	</head>
+
+	<body class="body no-transition">
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner"><a class="header__logo" href=""><img src="assets/images/svg/logo-black.svg" alt="" /></a>
+						<div class="header__main">
+							<div class="header__tel only-desktop"><a class="header__tel-link" href="tel:84957924565">8 495 792-45-65</a>
+								<div class="header__tel-note">Оптовые<br />продажи</div>
+							</div>
+							<div class="header__col">
+								<nav class="header__nav only-desktop">
+									<ul class="header__nav-inner">
+										<li><a href="">Условия сотрудничества</a></li>
+										<li><a href="">Услуги</a></li>
+										<li><a href="">Полезное</a></li>
+										<li><a href="">Новости</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+								</nav>
+								<div class="header__buttons"><a class="button black only-desktop" href="price.pdf" target="_blank"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.3083 8.3374H14.6834" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5.31665 8.3374L5.94165 8.9624L7.81665 7.0874" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10.3083 14.1709H14.6834" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5.31665 14.1709L5.94165 14.7959L7.81665 12.9209" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M7.49996 19.2709H12.5C16.6666 19.2709 18.3333 17.6042 18.3333 13.4376V8.43758C18.3333 4.27091 16.6666 2.60425 12.5 2.60425H7.49996C3.33329 2.60425 1.66663 4.27091 1.66663 8.43758V13.4376C1.66663 17.6042 3.33329 19.2709 7.49996 19.2709Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>Оптовый прайс-лист</a><button class="button only-desktop"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.1667 15.7957H10.8334L7.12503 18.2624C6.57503 18.6291 5.83338 18.2374 5.83338 17.5707V15.7957C3.33338 15.7957 1.66671 14.1291 1.66671 11.6291V6.62907C1.66671 4.12907 3.33338 2.4624 5.83338 2.4624H14.1667C16.6667 2.4624 18.3334 4.12907 18.3334 6.62907V11.6291C18.3334 14.1291 16.6667 15.7957 14.1667 15.7957Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>Задать вопрос</button><button class="button-round tablet-and-mobile"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.6468 12.2199C14.6468 12.4599 14.5935 12.7066 14.4802 12.9466C14.3668 13.1866 14.2202 13.4133 14.0268 13.6266C13.7002 13.9866 13.3402 14.2466 12.9335 14.4133C12.5335 14.5799 12.1002 14.6666 11.6335 14.6666C10.9535 14.6666 10.2268 14.5066 9.46016 14.1799C8.6935 13.8533 7.92683 13.4133 7.16683 12.8599C6.40016 12.2999 5.6735 11.6799 4.98016 10.9933C4.2935 10.2999 3.6735 9.57325 3.12016 8.81325C2.5735 8.05325 2.1335 7.29325 1.8135 6.53992C1.4935 5.77992 1.3335 5.05325 1.3335 4.35992C1.3335 3.90659 1.4135 3.47325 1.5735 3.07325C1.7335 2.66659 1.98683 2.29325 2.34016 1.95992C2.76683 1.53992 3.2335 1.33325 3.72683 1.33325C3.9135 1.33325 4.10016 1.37325 4.26683 1.45325C4.44016 1.53325 4.5935 1.65325 4.7135 1.82659L6.26016 4.00659C6.38016 4.17325 6.46683 4.32659 6.52683 4.47325C6.58683 4.61325 6.62016 4.75325 6.62016 4.87992C6.62016 5.03992 6.5735 5.19992 6.48016 5.35325C6.3935 5.50658 6.26683 5.66658 6.10683 5.82658L5.60016 6.35325C5.52683 6.42658 5.4935 6.51325 5.4935 6.61992C5.4935 6.67325 5.50016 6.71992 5.5135 6.77325C5.5335 6.82658 5.5535 6.86658 5.56683 6.90658C5.68683 7.12658 5.8935 7.41325 6.18683 7.75992C6.48683 8.10659 6.80683 8.45992 7.1535 8.81325C7.5135 9.16658 7.86016 9.49325 8.2135 9.79325C8.56016 10.0866 8.84683 10.2866 9.0735 10.4066C9.10683 10.4199 9.14683 10.4399 9.1935 10.4599C9.24683 10.4799 9.30016 10.4866 9.36016 10.4866C9.4735 10.4866 9.56016 10.4466 9.6335 10.3733L10.1402 9.87325C10.3068 9.70659 10.4668 9.57992 10.6202 9.49992C10.7735 9.40658 10.9268 9.35992 11.0935 9.35992C11.2202 9.35992 11.3535 9.38658 11.5002 9.44658C11.6468 9.50658 11.8002 9.59325 11.9668 9.70659L14.1735 11.2733C14.3468 11.3933 14.4668 11.5333 14.5402 11.6999C14.6068 11.8666 14.6468 12.0333 14.6468 12.2199Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10"></path>
+											<path d="M13.3333 2.6665H10.1333M13.3333 2.6665V5.8665V2.6665Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></button><button class="button-round grey"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+											<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+										</svg>
+										<div class="cart-counter" data-total-count="data-total-count">0</div>
+									</button><button class="button-round grey"><span>С.</span></button><button class="button-round black tablet-and-mobile"><svg class="burger" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.5 5.83325H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M2.5 10H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+											<path d="M2.5 14.1667H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+										</svg></button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="first-section mb120">
+					<div class="container">
+						<div class="cabinet-top"><a class="button cabinet-top__item active" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.16699 8.33335H5.83366C7.50033 8.33335 8.33366 7.50002 8.33366 5.83335V4.16669C8.33366 2.50002 7.50033 1.66669 5.83366 1.66669H4.16699C2.50033 1.66669 1.66699 2.50002 1.66699 4.16669V5.83335C1.66699 7.50002 2.50033 8.33335 4.16699 8.33335Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M14.167 8.33335H15.8337C17.5003 8.33335 18.3337 7.50002 18.3337 5.83335V4.16669C18.3337 2.50002 17.5003 1.66669 15.8337 1.66669H14.167C12.5003 1.66669 11.667 2.50002 11.667 4.16669V5.83335C11.667 7.50002 12.5003 8.33335 14.167 8.33335Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M14.167 18.3334H15.8337C17.5003 18.3334 18.3337 17.5 18.3337 15.8334V14.1667C18.3337 12.5 17.5003 11.6667 15.8337 11.6667H14.167C12.5003 11.6667 11.667 12.5 11.667 14.1667V15.8334C11.667 17.5 12.5003 18.3334 14.167 18.3334Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M4.16699 18.3334H5.83366C7.50033 18.3334 8.33366 17.5 8.33366 15.8334V14.1667C8.33366 12.5 7.50033 11.6667 5.83366 11.6667H4.16699C2.50033 11.6667 1.66699 12.5 1.66699 14.1667V15.8334C1.66699 17.5 2.50033 18.3334 4.16699 18.3334Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg><span>Каталог</span></a><a class="button cabinet-top__item" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.0846 9.41674V5.86676C17.0846 2.50842 16.3013 1.66675 13.1513 1.66675H6.8513C3.7013 1.66675 2.91797 2.50842 2.91797 5.86676V15.2501C2.91797 17.4667 4.13464 17.9917 5.60964 16.4084L5.61796 16.4001C6.30129 15.6751 7.34296 15.7334 7.93463 16.5251L8.7763 17.6501" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15.1667 17.8333C16.6394 17.8333 17.8333 16.6394 17.8333 15.1667C17.8333 13.6939 16.6394 12.5 15.1667 12.5C13.6939 12.5 12.5 13.6939 12.5 15.1667C12.5 16.6394 13.6939 17.8333 15.1667 17.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M18.3333 18.3333L17.5 17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M6.66797 5.83325H13.3346" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M7.5 9.16669H12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg><span>Мои заказы</span></a><a class="button cabinet-top__item" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.9987 10.0001C12.2999 10.0001 14.1654 8.1346 14.1654 5.83341C14.1654 3.53223 12.2999 1.66675 9.9987 1.66675C7.69751 1.66675 5.83203 3.53223 5.83203 5.83341C5.83203 8.1346 7.69751 10.0001 9.9987 10.0001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M2.8418 18.3333C2.8418 15.1083 6.05015 12.5 10.0002 12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15.1667 17.8334C16.6394 17.8334 17.8334 16.6394 17.8334 15.1667C17.8334 13.6939 16.6394 12.5 15.1667 12.5C13.6939 12.5 12.5 13.6939 12.5 15.1667C12.5 16.6394 13.6939 17.8334 15.1667 17.8334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M18.3333 18.3333L17.5 17.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>Профиль</a><button class="button cabinet-top__exit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.4668 12.1834L3.33346 10.05L5.4668 7.91669" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M11.8672 10.05H3.39219" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M10.2005 16.6666C13.8839 16.6666 16.8672 14.1666 16.8672 9.99992C16.8672 5.83325 13.8839 3.33325 10.2005 3.33325" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>Выход</button></div>
+						<h1 class="h1 cabinet-title">Каталог</h1>
+						<div class="catalog-categories"><button class="catalog-categories__item active">Кофе</button><button class="catalog-categories__item">Сиропы</button><button class="catalog-categories__item">Водопроводные фильтры</button><button class="catalog-categories__item">Чистящие средства</button><button class="catalog-categories__item">Ростеры Stronghold</button><button class="catalog-categories__item">Чай</button></div>
+						<div class="catalog-subcategories"><button class="button catalog-subcategories__item">Все</button><button class="button">Кофе в капсулах</button><button class="button">Кофе в дрип пакетах</button><button class="button">Зеленый кофе</button></div>
+						<div class="catalog-search"><input class="catalog-search__input form-input" placeholder="Искать по каталогу"><button class="button black catalog-search__button">Поиск</button></div>
+						<div class="catalog-body">
+							<div class="product-card" data-product="0">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Vietnam, 1 кг</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Кислотность</div><img class="volume" src="assets/images/svg/vol7.svg" alt="">
+											</div>
+											<div class="item">
+												<div class="ttl">Плотность</div><img class="volume" src="assets/images/svg/vol3.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="0">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="0"><button class="minus" data-counter-minus="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="0">2</span><button class="plus" data-counter-plus="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card" data-product="1">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Espresso Medium, 8 шт</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="1">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="1"><button class="minus" data-counter-minus="1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="1">2</span><button class="plus" data-counter-plus="1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card" data-product="2">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Burundi Yandaro, 250 г</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Кислотность</div><img class="volume" src="assets/images/svg/vol7.svg" alt="">
+											</div>
+											<div class="item">
+												<div class="ttl">Плотность</div><img class="volume" src="assets/images/svg/vol3.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="2">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="2"><button class="minus" data-counter-minus="2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="2">2</span><button class="plus" data-counter-plus="2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card" data-product="3">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Vietnam, 1 кг</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Кислотность</div><img class="volume" src="assets/images/svg/vol7.svg" alt="">
+											</div>
+											<div class="item">
+												<div class="ttl">Плотность</div><img class="volume" src="assets/images/svg/vol3.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="3">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="3"><button class="minus" data-counter-minus="3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="3">2</span><button class="plus" data-counter-plus="3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card" data-product="4">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Espresso Medium, 8 шт</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="4">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="4"><button class="minus" data-counter-minus="4"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="4">2</span><button class="plus" data-counter-plus="4"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card" data-product="5">
+								<div class="product-card__img">
+									<picture>
+										<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
+									</picture>
+								</div>
+								<div class="product-card__info">
+									<div class="product-card__col"><a class="product-card__ttl" href="">Burundi Yandaro, 250 г</a>
+										<div class="product-card__details first">
+											<div class="item">
+												<div class="ttl">Обработка</div>
+												<div class="value">Мытый</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Степень обжарки</div>
+												<div class="value">Фильр</div>
+											</div>
+											<div class="item">
+												<div class="ttl">Кислотность</div><img class="volume" src="assets/images/svg/vol7.svg" alt="">
+											</div>
+											<div class="item">
+												<div class="ttl">Плотность</div><img class="volume" src="assets/images/svg/vol3.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="product-card__col">
+										<div class="product-card__details counter">
+											<div class="item-price">
+												<div class="value"><span data-product-price="5">1 200</span> ₽</div>
+											</div>
+											<div class="item-counter product-card-counter" data-counter="5"><button class="minus" data-counter-minus="5"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button><span data-сounter-num="5">2</span><button class="plus" data-counter-plus="5"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+													<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+												</svg><span>В корзину</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-button"><button class="button"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.94141 12.588L9.99974 17.6463L15.0581 12.588" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M10 3.47864L10 17.5036" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>Показать еще</button></div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__top">
+							<div class="footer__col only-desktop"><img class="footer__label" src="assets/images/footer-label.png" alt="" /></div>
+							<div class="footer__col">
+								<div class="footer__contact">
+									<div class="footer__contact-ttl">Отдел продаж</div><a class="footer__contact-link" href="tel:84957924565">8 495 792-45-65</a>
+								</div>
+								<div class="footer__contact">
+									<div class="footer__contact-ttl">Почта</div><a class="footer__contact-link" href="mailto:info@bonfuse.ru">info@bonfuse.ru</a>
+								</div><button class="button white-content"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.1667 15.7957H10.8334L7.12503 18.2624C6.57503 18.6291 5.83338 18.2374 5.83338 17.5707V15.7957C3.33338 15.7957 1.66671 14.1291 1.66671 11.6291V6.62907C1.66671 4.12907 3.33338 2.4624 5.83338 2.4624H14.1667C16.6667 2.4624 18.3334 4.12907 18.3334 6.62907V11.6291C18.3334 14.1291 16.6667 15.7957 14.1667 15.7957Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>Задать вопрос</button>
+							</div>
+							<div class="footer__col">
+								<nav class="footer__nav">
+									<ul class="footer__nav-inner">
+										<li><a href="">Условия сотрудничества</a></li>
+										<li><a href="">Услуги</a></li>
+										<li><a href="">Полезное</a></li>
+										<li><a href="">Новости</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+								</nav>
+								<div class="socials-row"><a class="socials-row__item" href="https://vk.com/bonfuse" target="_blank"><svg class="vk-ico" width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.8931 13C4.0599 13 0.162399 8.12012 0 0H3.42286C3.53529 5.95996 6.05865 8.48448 8.0574 9.005V0H11.2805V5.14014C13.2543 4.91892 15.3277 2.57658 16.0273 0H19.2503C18.7132 3.17518 16.4646 5.51752 14.8656 6.48048C16.4646 7.26126 19.0256 9.30431 20 13H16.4521C15.6901 10.5275 13.7914 8.61461 11.2805 8.35435V13H10.8931Z" fill="white"></path>
+										</svg></a><a class="socials-row__item" href="" target="_blank"><svg class="tg-ico" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.22615 7.40355L13.1395 2.35766C14.3155 1.83205 18.3036 0.150082 18.3036 0.150082C18.3036 0.150082 20.1443 -0.585778 19.9909 1.20131C19.9398 1.93717 19.5307 4.51267 19.1217 7.29843L17.8435 15.5506C17.8435 15.5506 17.7412 16.7595 16.872 16.9697C16.0028 17.18 14.5711 16.2339 14.3155 16.0236C14.111 15.8659 10.4807 13.5007 9.15133 12.3443C8.79341 12.029 8.38437 11.3982 9.20246 10.6624C11.0431 8.92783 13.2417 6.77281 14.5711 5.40622C15.1847 4.77548 15.7982 3.30376 13.2417 5.09085L6.03238 10.0842C6.03238 10.0842 5.2143 10.6098 3.6804 10.1367C2.14649 9.66369 0.356936 9.03295 0.356936 9.03295C0.356936 9.03295 -0.870188 8.24453 1.22615 7.40355Z" fill="white"></path>
+										</svg></a><a class="socials-row__item" href="https://www.youtube.com/channel/UCZlF1oECVk92d4lXMlK1jiw" target="_blank"><svg class="yt-ico" width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.1076 1.33312C19.2734 0.0620695 15.1975 0 11.5 0C7.80253 0 3.72658 0.0620695 1.89241 1.33312C0.0582278 2.60417 0 5.35812 0 6.99989C0 8.64167 0.0582278 11.3956 1.89241 12.6667C3.72658 13.9377 7.80253 14 11.5 14V13.9998C15.1975 13.9998 19.2734 13.9377 21.1076 12.6667C22.9418 11.3956 23 8.64167 23 6.99989C23 5.35812 22.9418 2.60417 21.1076 1.33312ZM15.1441 7.37019L15.1448 7.37104L8.89675 10.3995C8.86321 10.4216 8.82664 10.4391 8.78728 10.4527L8.77959 10.4565L8.77913 10.455C8.72859 10.4716 8.67478 10.4822 8.61795 10.4822C8.35267 10.4822 8.13769 10.2864 8.13769 10.0453V3.94132C8.13769 3.70003 8.3529 3.5045 8.61795 3.5045C8.69272 3.5045 8.76283 3.52145 8.82594 3.5492L8.82618 3.54899L15.1448 6.62959L15.1446 6.63002C15.2809 6.70713 15.3724 6.84355 15.3724 7.00011C15.3722 7.15666 15.2804 7.29308 15.1441 7.37019Z" fill="white"></path>
+										</svg></a></div>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__corp">© Bonfuse, 2022 г. Все права защищены.</div><a class="footer__bottom-txt" href="p-p.pdf" target="_blank">Пользовательское соглашение</a>
+							<div class="footer__bottom-txt">Сделано в <a href="https://cloudmill.ru" target="_blank">CloudMill</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="grid-test">
+				<div class="container">
+					<div class="grid-test__row">
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modals"></div>
+	</body>
+
+</html>
