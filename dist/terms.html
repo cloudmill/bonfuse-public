@@ -63,19 +63,24 @@
 						<h1 class="h1">Условия сотрудничества</h1>
 						<div class="terms-row">
 							<div class="terms-row__item"><img class="terms-row__img" src="assets/images/terms1.png" alt="">
-								<div class="terms-row__ttl">Минимальный заказ — <span>от 5 упаковок</span></div>
+								<div class="terms-row__ttl only-desktop">Минимальный заказ — <span>от 5 упаковок</span></div>
+								<div class="terms-row__ttl tablet-and-mobile">Минимальный заказ —<br><span>от 5 упаковок</span></div>
 							</div>
 							<div class="terms-row__item"><img class="terms-row__img" src="assets/images/terms2.png" alt="">
-								<div class="terms-row__ttl">Работаем только <span>с юридическими лицами и ИП</span></div>
+								<div class="terms-row__ttl only-desktop">Работаем только <span>с юридическими лицами и ИП</span></div>
+								<div class="terms-row__ttl tablet-and-mobile">Работаем только<br><span>с юридическими лицами и ИП</span></div>
 							</div>
 							<div class="terms-row__item"><img class="terms-row__img" src="assets/images/terms3.png" alt="">
 								<div class="terms-row__ttl">Оплата осуществляется <span>безналичным расчетом</span></div>
 							</div>
 						</div>
-						<div class="terms-info margin40"><img src="assets/images/terms-big.jpeg" alt="">
+						<div class="terms-info margin40">
+							<picture class="terms-info__img">
+								<source srcset="assets/images/webp/terms-big.webp" type="image/webp" /><img src="assets/images/terms-big.jpeg" alt="" />
+							</picture>
 							<div class="terms-info__col">
 								<div class="terms-info__txt">Отгрузка товара осуществляется<br><span>в соответствии с выбранными<br>условиями доставки</span></div>
-								<ul class="terms-info__list">
+								<ul class="terms-info__list dot">
 									<li>Бесплатная доставка по Москве нашей службой</li>
 									<li>Службы доставки по России: ПЭК, Деловые Линии, Логсис</li>
 									<li>В случае необходимости доставки товара до адреса покупателя условия и стоимость доставки обсуждаются в отдельном порядке</li>
@@ -86,7 +91,8 @@
 					<section class="retail-section margin40">
 						<div class="retail-section__col">
 							<div class="retail-section__ttl">Купить в розницу</div>
-							<div class="retail-section__txt">Чтобы купить нашу продукцию в розницу,<br />перейдите на один из подходящих маркплейсов<br />и оформите заказ</div>
+							<div class="retail-section__txt only-desktop">Чтобы купить нашу продукцию в розницу,<br />перейдите на один из подходящих маркплейсов<br />и оформите заказ</div>
+							<div class="retail-section__txt tablet-and-mobile">Чтобы купить нашу продукцию в розницу, перейдите на один из подходящих маркплейсов и оформите заказ</div>
 						</div>
 						<div class="retail-section__list"><a class="retail-section__item" href="" target="_blank"><img src="assets/images/retail-label-1.png" alt="" /><svg class="retail-section__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M8.66699 7.33288L14.1337 1.86621" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -106,17 +112,22 @@
 									<path d="M7.33301 1.33301H5.99967C2.66634 1.33301 1.33301 2.66634 1.33301 5.99967V9.99967C1.33301 13.333 2.66634 14.6663 5.99967 14.6663H9.99967C13.333 14.6663 14.6663 13.333 14.6663 9.99967V8.66634" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></a></div>
 					</section>
-					<section class="cabinet-block margin40"><img class="cabinet-block__bg" src="assets/images/cabinet-bg.jpeg" alt="" />
+					<section class="cabinet-block margin40">
+						<picture class="cabinet-block__bg">
+							<source srcset="assets/images/cabinet-bg-mob.png" media="(max-width: 767px)" />
+							<source srcset="assets/images/cabinet-bg-tablet.png" media="(max-width: 1023px)" /><img src="assets/images/cabinet-bg.jpeg" alt="" />
+						</picture>
 						<div class="cabinet-block__content">
 							<div class="cabinet-block__ttl">Оформляйте заказы<br />в Личном кабинете</div>
-							<div class="cabinet-block__txt">Заказ на сайте можно оформить только в <span>Личном кабинете</span><br />после авторизации. Продукция будет доступна на стартовой<br />странице кабинета.</div><button class="button black">Войти или зарегистрироваться</button>
+							<div class="cabinet-block__txt">Заказ на сайте можно оформить только в <span>Личном кабинете</span><br />после авторизации. Продукция будет доступна на стартовой<br />странице кабинета.</div><button class="button black" data-fancy-button="login">Войти или зарегистрироваться</button>
 						</div>
 					</section>
 					<section class="registration-sec margin120">
-						<h2 class="registration-sec__ttl">Чтобы зарегестироваться, требуется<br>выполнить несколько шагов</h2>
+						<h2 class="registration-sec__ttl only-desktop">Чтобы зарегестироваться, требуется<br>выполнить несколько шагов</h2>
+						<h2 class="registration-sec__ttl tablet-and-mobile">Чтобы зарегестироваться, требуется выполнить несколько шагов</h2>
 						<div class="registration-sec__list">
 							<div class="registration-sec__item"><img src="assets/images/registration-1.png" alt="">
-								<div class="ttl">Вызвать форму регистрации</div><button class="button black">Зарегистрироваться</button>
+								<div class="ttl">Вызвать форму регистрации</div><button class="button black" data-fancy-button="login">Зарегистрироваться</button>
 							</div>
 							<div class="registration-sec__item"><img src="assets/images/registration-2.png" alt="">
 								<div class="ttl">Заполнить реквизиты компании и указать контактное лицо</div>

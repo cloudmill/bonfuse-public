@@ -120,7 +120,8 @@
 					<section class="retail-section margin40">
 						<div class="retail-section__col">
 							<div class="retail-section__ttl">Купить в розницу</div>
-							<div class="retail-section__txt">Чтобы купить нашу продукцию в розницу,<br />перейдите на один из подходящих маркплейсов<br />и оформите заказ</div>
+							<div class="retail-section__txt only-desktop">Чтобы купить нашу продукцию в розницу,<br />перейдите на один из подходящих маркплейсов<br />и оформите заказ</div>
+							<div class="retail-section__txt tablet-and-mobile">Чтобы купить нашу продукцию в розницу, перейдите на один из подходящих маркплейсов и оформите заказ</div>
 						</div>
 						<div class="retail-section__list"><a class="retail-section__item" href="" target="_blank"><img src="assets/images/retail-label-1.png" alt="" /><svg class="retail-section__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M8.66699 7.33288L14.1337 1.86621" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -140,10 +141,14 @@
 									<path d="M7.33301 1.33301H5.99967C2.66634 1.33301 1.33301 2.66634 1.33301 5.99967V9.99967C1.33301 13.333 2.66634 14.6663 5.99967 14.6663H9.99967C13.333 14.6663 14.6663 13.333 14.6663 9.99967V8.66634" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></a></div>
 					</section>
-					<section class="cabinet-block"><img class="cabinet-block__bg" src="assets/images/cabinet-bg.jpeg" alt="" />
+					<section class="cabinet-block">
+						<picture class="cabinet-block__bg">
+							<source srcset="assets/images/cabinet-bg-mob.png" media="(max-width: 767px)" />
+							<source srcset="assets/images/cabinet-bg-tablet.png" media="(max-width: 1023px)" /><img src="assets/images/cabinet-bg.jpeg" alt="" />
+						</picture>
 						<div class="cabinet-block__content">
 							<div class="cabinet-block__ttl">Оформляйте заказы<br />в Личном кабинете</div>
-							<div class="cabinet-block__txt">Заказ на сайте можно оформить только в <span>Личном кабинете</span><br />после авторизации. Продукция будет доступна на стартовой<br />странице кабинета.</div><button class="button black">Войти или зарегистрироваться</button>
+							<div class="cabinet-block__txt">Заказ на сайте можно оформить только в <span>Личном кабинете</span><br />после авторизации. Продукция будет доступна на стартовой<br />странице кабинета.</div><button class="button black" data-fancy-button="login">Войти или зарегистрироваться</button>
 						</div>
 					</section>
 					<section class="news-block">
