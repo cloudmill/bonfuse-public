@@ -88,42 +88,38 @@
 								</svg>Выход</button></div>
 						<h1 class="h1 cabinet-title">Профиль</h1>
 						<div class="profile-body">
-							<div class="profile-table">
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">название организации</div>
-									<div class="profile-table__value">ООО «Нестле Россия»</div>
-								</div>
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">ИНН</div>
-									<div class="profile-table__value">6449013711</div>
-								</div>
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">Фио</div>
-									<div class="profile-table__value">Анастасия Артемовна</div>
-								</div>
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">e-mail</div>
-									<div class="profile-table__value">nestle@nestle.ru</div>
-								</div>
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">Номер телефона</div>
-									<div class="profile-table__value">+7 981 157 92 90</div>
-								</div>
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">Адрес доставки</div>
-									<div class="profile-table__value">Санкт-Петербург, Лунарчарского, 12</div>
-								</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">название организации</div>
+								<div class="profile-table__value" data-profile="org">ООО «Нестле Россия»</div>
 							</div>
-							<div class="profile-body__col">
-								<div class="profile-table__row">
-									<div class="profile-table__ttl">Пароль</div>
-									<div class="profile-table__value">********</div>
-								</div><button class="button" data-fancy-button="profile"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M9.16699 1.66666H7.50033C3.33366 1.66666 1.66699 3.33333 1.66699 7.5V12.5C1.66699 16.6667 3.33366 18.3333 7.50033 18.3333H12.5003C16.667 18.3333 18.3337 16.6667 18.3337 12.5V10.8333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M13.3666 2.51666L6.7999 9.08333C6.5499 9.33333 6.2999 9.825 6.2499 10.1833L5.89157 12.6917C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.63333C18.6166 5.5 19.1499 4.18333 17.4832 2.51666C15.8166 0.849997 14.4999 1.38333 13.3666 2.51666Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M12.4248 3.45834C12.9831 5.45 14.5415 7.00834 16.5415 7.575" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-									</svg><span>Редактировать</span></button>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">ИНН</div>
+								<div class="profile-table__value" data-profile="inn">6449013711</div>
 							</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">Фио</div>
+								<div class="profile-table__value" data-profile="name">Анастасия Артемовна</div>
+							</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">e-mail</div>
+								<div class="profile-table__value" data-profile="mail">nestle@nestle.ru</div>
+							</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">Номер телефона</div>
+								<div class="profile-table__value" data-profile="tel">+7 981 157 92 90</div>
+							</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">Адрес доставки</div>
+								<div class="profile-table__value" data-profile="address">Санкт-Петербург, Лунарчарского, 12</div>
+							</div>
+							<div class="profile-table__row" data-profile-row>
+								<div class="profile-table__ttl">Пароль</div>
+								<div class="profile-table__value" data-profile="pass">********</div>
+							</div><button class="button profile-edit" data-fancy-button="profile"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.16699 1.66666H7.50033C3.33366 1.66666 1.66699 3.33333 1.66699 7.5V12.5C1.66699 16.6667 3.33366 18.3333 7.50033 18.3333H12.5003C16.667 18.3333 18.3337 16.6667 18.3337 12.5V10.8333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M13.3666 2.51666L6.7999 9.08333C6.5499 9.33333 6.2999 9.825 6.2499 10.1833L5.89157 12.6917C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.63333C18.6166 5.5 19.1499 4.18333 17.4832 2.51666C15.8166 0.849997 14.4999 1.38333 13.3666 2.51666Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12.4248 3.45834C12.9831 5.45 14.5415 7.00834 16.5415 7.575" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg><span>Редактировать</span></button>
 						</div>
 					</div>
 				</section>
@@ -222,7 +218,7 @@
 			<div class="modal service-modal" data-fancy-modal="profile">
 				<div class="service-modal__main">
 					<div class="h2">Изменить данные</div>
-					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Адрес доставки</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль еще раз</span></label><label class="checkbox__label">
+					<form class="service-modal__form profile-modal-form" data-parsley-validate data-profile-form><label class="form-label"><input class="form-input" data-input data-profile-input="name" placeholder="ФИО"></label><label class="form-label"><input class="form-input" type="email" data-input data-profile-input="mail" placeholder="E-mail"></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-profile-input="tel" placeholder="Телефон"></label><label class="form-label"><input class="form-input" data-input data-profile-input="address" placeholder="Адрес доставки"></label><label class="form-label"><input class="form-input" id="profile-password" type="password" data-input data-profile-input="pass" required placeholder="Пароль"></label><label class="form-label"><input class="form-input" type="password" data-input data-profile-input="pass" data-parsley-equalto="#profile-password" required placeholder="Пароль еще раз"></label><label class="checkbox__label">
 							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="23" height="23" rx="4" fill="black"></rect>
 									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
