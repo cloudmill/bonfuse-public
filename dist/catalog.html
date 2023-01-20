@@ -5,9 +5,8 @@
 		<meta charset="utf-8">
 		<title>bonfuse</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="styles.css" rel="stylesheet">
+		<link href="6.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -41,7 +40,7 @@
 										</svg>Задать вопрос</button><button class="button-round tablet-and-mobile"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M14.6468 12.2199C14.6468 12.4599 14.5935 12.7066 14.4802 12.9466C14.3668 13.1866 14.2202 13.4133 14.0268 13.6266C13.7002 13.9866 13.3402 14.2466 12.9335 14.4133C12.5335 14.5799 12.1002 14.6666 11.6335 14.6666C10.9535 14.6666 10.2268 14.5066 9.46016 14.1799C8.6935 13.8533 7.92683 13.4133 7.16683 12.8599C6.40016 12.2999 5.6735 11.6799 4.98016 10.9933C4.2935 10.2999 3.6735 9.57325 3.12016 8.81325C2.5735 8.05325 2.1335 7.29325 1.8135 6.53992C1.4935 5.77992 1.3335 5.05325 1.3335 4.35992C1.3335 3.90659 1.4135 3.47325 1.5735 3.07325C1.7335 2.66659 1.98683 2.29325 2.34016 1.95992C2.76683 1.53992 3.2335 1.33325 3.72683 1.33325C3.9135 1.33325 4.10016 1.37325 4.26683 1.45325C4.44016 1.53325 4.5935 1.65325 4.7135 1.82659L6.26016 4.00659C6.38016 4.17325 6.46683 4.32659 6.52683 4.47325C6.58683 4.61325 6.62016 4.75325 6.62016 4.87992C6.62016 5.03992 6.5735 5.19992 6.48016 5.35325C6.3935 5.50658 6.26683 5.66658 6.10683 5.82658L5.60016 6.35325C5.52683 6.42658 5.4935 6.51325 5.4935 6.61992C5.4935 6.67325 5.50016 6.71992 5.5135 6.77325C5.5335 6.82658 5.5535 6.86658 5.56683 6.90658C5.68683 7.12658 5.8935 7.41325 6.18683 7.75992C6.48683 8.10659 6.80683 8.45992 7.1535 8.81325C7.5135 9.16658 7.86016 9.49325 8.2135 9.79325C8.56016 10.0866 8.84683 10.2866 9.0735 10.4066C9.10683 10.4199 9.14683 10.4399 9.1935 10.4599C9.24683 10.4799 9.30016 10.4866 9.36016 10.4866C9.4735 10.4866 9.56016 10.4466 9.6335 10.3733L10.1402 9.87325C10.3068 9.70659 10.4668 9.57992 10.6202 9.49992C10.7735 9.40658 10.9268 9.35992 11.0935 9.35992C11.2202 9.35992 11.3535 9.38658 11.5002 9.44658C11.6468 9.50658 11.8002 9.59325 11.9668 9.70659L14.1735 11.2733C14.3468 11.3933 14.4668 11.5333 14.5402 11.6999C14.6068 11.8666 14.6468 12.0333 14.6468 12.2199Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10"></path>
 											<path d="M13.3333 2.6665H10.1333M13.3333 2.6665V5.8665V2.6665Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg></button><button class="button-round grey"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										</svg></button><button class="button-round grey" data-fancy-button="cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 											<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 											<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -98,13 +97,19 @@
 						<div class="catalog-search-counter">Найдено товаров: <span>9</span></div>
 						<div class="catalog-body">
 							<div class="product-card" data-product="0">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-1.jpeg" data-fancybox="gallery0" data-thumb="assets/images/product-1.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery0" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Vietnam, 1 кг</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Vietnam, 1 кг</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -129,10 +134,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="0"><button class="minus" data-counter-minus="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="0">2</span><button class="plus" data-counter-plus="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="0">1</span><button class="plus" data-counter-plus="0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -143,13 +148,19 @@
 								</div>
 							</div>
 							<div class="product-card" data-product="1">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-2.jpeg" data-fancybox="gallery1" data-thumb="assets/images/product-2.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery1" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Espresso Medium, 8 шт</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Espresso Medium, 8 шт</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -168,10 +179,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="1"><button class="minus" data-counter-minus="1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="1">2</span><button class="plus" data-counter-plus="1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="1">1</span><button class="plus" data-counter-plus="1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -182,13 +193,19 @@
 								</div>
 							</div>
 							<div class="product-card" data-product="2">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-3.jpeg" data-fancybox="gallery2" data-thumb="assets/images/product-3.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery2" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Burundi Yandaro, 250 г</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Burundi Yandaro, 250 г</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -213,10 +230,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="2"><button class="minus" data-counter-minus="2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="2">2</span><button class="plus" data-counter-plus="2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="2">1</span><button class="plus" data-counter-plus="2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -227,13 +244,19 @@
 								</div>
 							</div>
 							<div class="product-card" data-product="3">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-1.jpeg" data-fancybox="gallery3" data-thumb="assets/images/product-1.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-1.webp" type="image/webp" /><img src="assets/images/product-1.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery3" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Vietnam, 1 кг</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Vietnam, 1 кг</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -258,10 +281,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="3"><button class="minus" data-counter-minus="3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="3">2</span><button class="plus" data-counter-plus="3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="3">1</span><button class="plus" data-counter-plus="3"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -272,13 +295,19 @@
 								</div>
 							</div>
 							<div class="product-card" data-product="4">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-2.jpeg" data-fancybox="gallery4" data-thumb="assets/images/product-2.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-2.webp" type="image/webp" /><img src="assets/images/product-2.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery4" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Espresso Medium, 8 шт</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Espresso Medium, 8 шт</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -297,10 +326,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="4"><button class="minus" data-counter-minus="4"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="4">2</span><button class="plus" data-counter-plus="4"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="4">1</span><button class="plus" data-counter-plus="4"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -311,13 +340,19 @@
 								</div>
 							</div>
 							<div class="product-card" data-product="5">
-								<div class="product-card__img">
-									<picture>
-										<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
-									</picture>
+								<div class="product-card__img" data-product-img><a href="assets/images/product-3.jpeg" data-fancybox="gallery5" data-thumb="assets/images/product-3.jpeg">
+										<picture>
+											<source srcset="assets/images/webp/product-3.webp" type="image/webp" /><img src="assets/images/product-3.jpeg" alt="" />
+										</picture>
+									</a>
+									<div class="product-card__zoom"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle opacity="0.1" cx="16" cy="16" r="16" fill="black"></circle>
+											<path d="M15.7337 20.7998C18.5319 20.7998 20.8003 18.5314 20.8003 15.7332C20.8003 12.9349 18.5319 10.6665 15.7337 10.6665C12.9354 10.6665 10.667 12.9349 10.667 15.7332C10.667 18.5314 12.9354 20.7998 15.7337 20.7998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M21.3333 21.3333L20.2666 20.2666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div><a href="assets/images/product-2.jpeg" data-fancybox="gallery5" data-thumb="assets/images/product-2.jpeg"></a>
 								</div>
 								<div class="product-card__info">
-									<div class="product-card__col"><a class="product-card__ttl" href="">Burundi Yandaro, 250 г</a>
+									<div class="product-card__col"><a class="product-card__ttl" href="" data-product-ttl>Burundi Yandaro, 250 г</a>
 										<div class="product-card__details first">
 											<div class="item">
 												<div class="ttl">Обработка</div>
@@ -342,10 +377,10 @@
 											</div>
 											<div class="item-counter product-card-counter" data-counter="5"><button class="minus" data-counter-minus="5"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button><span data-сounter-num="5">2</span><button class="plus" data-counter-plus="5"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button><span data-сounter-num="5">1</span><button class="plus" data-counter-plus="5"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M5 10H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M10 15V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></button></div><button class="button black product-card__cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													</svg></button></div><button class="button black product-card__cart" data-fancy-button="add-cart"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
@@ -452,6 +487,25 @@
 				<div class="service-modal__response">
 					<div class="h2">Вопрос отправлен</div>
 					<div class="service-modal__response-txt">Наш менеджер свяжется с вами<br>через 15 минут</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
+				</div>
+			</div>
+			<div class="modal catalog-modal" data-fancy-modal="add-cart">
+				<div class="service-modal__response display">
+					<div class="h2">Товар добавлен в корзину</div>
+					<div class="catalog-modal-card">
+						<div class="catalog-modal-card__img"><img src="assets/images/product-1.jpeg" alt="" data-added-img></div>
+						<div class="catalog-modal-card__info">
+							<div class="catalog-modal-card__ttl" data-added-ttl>Espresso Medium, 8 шт</div>
+							<div class="catalog-modal-card__count"><span data-added-count>3</span>&nbsp;<span>шт</span></div>
+							<div class="catalog-modal-card__price"><span data-added-price>294</span>&nbsp;<span> ₽</span></div>
+						</div>
+					</div>
+					<div class="catalog-modal__buttons"><a class="button black" href=""><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.34168 2.16663L4.32501 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12.6583 2.16663L15.675 5.19163" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M1.66666 7.04167C1.66666 5.5 2.49166 5.375 3.51666 5.375H16.4833C17.5083 5.375 18.3333 5.5 18.3333 7.04167C18.3333 8.83333 17.5083 8.70833 16.4833 8.70833H3.51666C2.49166 8.70833 1.66666 8.83333 1.66666 7.04167Z" stroke="black" stroke-width="2"></path>
+								<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+							</svg>Перейти в корзину</a><button class="button" data-fancybox-close>Продолжить покупки</button></div>
 				</div>
 			</div>
 		</div>
