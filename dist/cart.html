@@ -455,9 +455,20 @@
 												<path d="M2.91666 10.375H16.9417" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 											</svg><span>Перейти к оформлению</span></button>
 									</div>
-									<div class="cart-promocode">
-										<div class="h3 cart-promocode__ttl">Использовать промокод</div>
-										<form class="cart-promocode__form"><label class="form-label"><input class="form-input" data-input data-promo-input required><span class="form-placeholder">Номер промокода</span></label><input class="button black disabled" type="submit" value="Применить" data-promo-button></form>
+									<div class="cart-promocode" data-promocode>
+										<div class="cart-promocode__main">
+											<div class="h3 cart-promocode__ttl">Использовать промокод</div>
+											<form class="cart-promocode__form" data-promocode-form data-parsley-validate><label class="form-label"><input class="form-input" data-input data-promo-input required><span class="form-placeholder">Номер промокода</span></label><input class="button black disabled" type="submit" value="Применить" data-promo-button></form>
+										</div>
+										<div class="cart-promocode-response">
+											<div class="cart-promocode-response__col">
+												<div class="cart-promocode-response__ttl">Промокод применен</div>
+												<div class="cart-promocode-response__code" data-promocode-code>YU890EVO1OD</div>
+											</div><button class="cart-promocode-response__back" data-promocode-back><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.00098 4.99951L15.001 14.9995" stroke="#757E86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M5 14.9995L15 4.99951" stroke="#757E86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg><span>Отменить</span></button>
+										</div>
 									</div>
 								</div>
 							</div>
