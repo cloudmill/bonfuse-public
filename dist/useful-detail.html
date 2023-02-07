@@ -7,13 +7,13 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="142.css" rel="stylesheet">
+		<link href="250.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
 	<body class="body no-transition">
 		<div class="wrapper">
-			<header class="header">
+			<header class="header" data-aos="fade-up">
 				<div class="header__inner container"><a class="header__logo" href=""><img src="assets/images/svg/logo-black.svg" alt="" /></a>
 					<div class="header__main">
 						<div class="header__tel only-desktop"><a class="header__tel-link" href="tel:84957924565">8 495 792-45-65</a>
@@ -55,7 +55,7 @@
 			<main class="main">
 				<div class="container pb120">
 					<section class="first-section">
-						<div class="breadcrumbs"><a class="breadcrumbs__item" href="">Главная</a><a class="breadcrumbs__item" href="">Полезное</a>
+						<div class="breadcrumbs" data-aos="fade-up"><a class="breadcrumbs__item" href="">Главная</a><a class="breadcrumbs__item" href="">Полезное</a>
 							<div class="breadcrumbs__item">Как сварить кофе в турке дома — 5 правильных рецептов для плиты</div>
 						</div>
 						<div class="article-body">
@@ -154,7 +154,7 @@
 					</section>
 				</div>
 			</main>
-			<footer class="footer">
+			<footer class="footer" data-aos="fade-up">
 				<div class="container">
 					<div class="footer__inner">
 						<div class="footer__top">
@@ -247,6 +247,12 @@
 						</svg><span>Оптовый прайс-лист</span></a><button class="button" data-fancy-button="ask"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M14.1667 15.7957H10.8334L7.12503 18.2624C6.57503 18.6291 5.83338 18.2374 5.83338 17.5707V15.7957C3.33338 15.7957 1.66671 14.1291 1.66671 11.6291V6.62907C1.66671 4.12907 3.33338 2.4624 5.83338 2.4624H14.1667C16.6667 2.4624 18.3334 4.12907 18.3334 6.62907V11.6291C18.3334 14.1291 16.6667 15.7957 14.1667 15.7957Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg><span>Задать вопрос</span></button></div>
+			</div>
+			<div class="modal response-modal" data-fancy-modal="subscribe-response">
+				<div class="service-modal__response display">
+					<div class="h2">Подписка оформлена</div>
+					<div class="service-modal__response-txt">Теперь вы будете в курсе всех<br>актуальных новостей кофейной<br>индустрии.</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
+				</div>
 			</div>
 		</div>
 	</body>
