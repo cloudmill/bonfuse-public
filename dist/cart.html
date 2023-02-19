@@ -7,14 +7,14 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="250.css" rel="stylesheet">
+		<link href="942.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
 	<body class="body no-transition">
 		<div class="wrapper">
 			<header class="header shadow" data-aos="fade-up">
-				<div class="header__inner container"><a class="header__logo" href=""><img src="assets/images/svg/logo-black.svg" alt="" /></a>
+				<div class="header__inner container no-opacity transition" data-show-1="data-show-1"><a class="header__logo" href=""><img src="assets/images/svg/logo-black.svg" alt="" /></a>
 					<div class="header__main">
 						<div class="header__tel only-desktop"><a class="header__tel-link" href="tel:84957924565">8 495 792-45-65</a>
 							<div class="header__tel-note">Оптовые продажи</div>
@@ -54,7 +54,7 @@
 										<path d="M2.91666 8.83337L4.09166 16.0334C4.35832 17.65 4.99999 18.8334 7.38332 18.8334H12.4083C15 18.8334 15.3833 17.7 15.6833 16.1334L17.0833 8.83337" stroke="black" stroke-width="2" stroke-linecap="round"></path>
 									</svg>
 									<div class="cart-counter" data-total-count="data-total-count">0</div>
-								</a><button class="button-round grey"><span>С.</span></button><button class="button-round black tablet-and-mobile" data-fancy-button="menu"><svg class="burger" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</a><button class="button-round grey" data-profile-menu="data-profile-menu"><span>С.</span></button><button class="button-round black tablet-and-mobile" data-fancy-button="menu"><svg class="burger" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M2.5 5.83325H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
 										<path d="M2.5 10H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
 										<path d="M2.5 14.1667H17.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
@@ -62,16 +62,37 @@
 						</div>
 					</div>
 				</div>
+				<div class="profile-menu" id="profile-menu" style="display: none;"><a class="profile-menu__item" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.16699 8.33335H5.83366C7.50033 8.33335 8.33366 7.50002 8.33366 5.83335V4.16669C8.33366 2.50002 7.50033 1.66669 5.83366 1.66669H4.16699C2.50033 1.66669 1.66699 2.50002 1.66699 4.16669V5.83335C1.66699 7.50002 2.50033 8.33335 4.16699 8.33335Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M14.167 8.33335H15.8337C17.5003 8.33335 18.3337 7.50002 18.3337 5.83335V4.16669C18.3337 2.50002 17.5003 1.66669 15.8337 1.66669H14.167C12.5003 1.66669 11.667 2.50002 11.667 4.16669V5.83335C11.667 7.50002 12.5003 8.33335 14.167 8.33335Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M14.167 18.3334H15.8337C17.5003 18.3334 18.3337 17.5 18.3337 15.8334V14.1667C18.3337 12.5 17.5003 11.6667 15.8337 11.6667H14.167C12.5003 11.6667 11.667 12.5 11.667 14.1667V15.8334C11.667 17.5 12.5003 18.3334 14.167 18.3334Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M4.16699 18.3334H5.83366C7.50033 18.3334 8.33366 17.5 8.33366 15.8334V14.1667C8.33366 12.5 7.50033 11.6667 5.83366 11.6667H4.16699C2.50033 11.6667 1.66699 12.5 1.66699 14.1667V15.8334C1.66699 17.5 2.50033 18.3334 4.16699 18.3334Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg><span>Каталог</span></a><a class="profile-menu__item" href=""> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.0846 9.41674V5.86676C17.0846 2.50842 16.3013 1.66675 13.1513 1.66675H6.8513C3.7013 1.66675 2.91797 2.50842 2.91797 5.86676V15.2501C2.91797 17.4667 4.13464 17.9917 5.60964 16.4084L5.61796 16.4001C6.30129 15.6751 7.34296 15.7334 7.93463 16.5251L8.7763 17.6501" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M15.1667 17.8333C16.6394 17.8333 17.8333 16.6394 17.8333 15.1667C17.8333 13.6939 16.6394 12.5 15.1667 12.5C13.6939 12.5 12.5 13.6939 12.5 15.1667C12.5 16.6394 13.6939 17.8333 15.1667 17.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M18.3333 18.3333L17.5 17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M6.66797 5.83325H13.3346" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M7.5 9.16669H12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg><span>Мои заказы</span></a><a class="profile-menu__item" href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.9987 10.0001C12.2999 10.0001 14.1654 8.1346 14.1654 5.83341C14.1654 3.53223 12.2999 1.66675 9.9987 1.66675C7.69751 1.66675 5.83203 3.53223 5.83203 5.83341C5.83203 8.1346 7.69751 10.0001 9.9987 10.0001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M2.8418 18.3333C2.8418 15.1083 6.05015 12.5 10.0002 12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M15.1667 17.8334C16.6394 17.8334 17.8334 16.6394 17.8334 15.1667C17.8334 13.6939 16.6394 12.5 15.1667 12.5C13.6939 12.5 12.5 13.6939 12.5 15.1667C12.5 16.6394 13.6939 17.8334 15.1667 17.8334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M18.3333 18.3333L17.5 17.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg><span>Профиль</span></a><button class="profile-menu__item exit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.4668 12.1834L3.33346 10.05L5.4668 7.91669" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M11.8672 10.05H3.39219" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M10.2005 16.6666C13.8839 16.6666 16.8672 14.1666 16.8672 9.99992C16.8672 5.83325 13.8839 3.33325 10.2005 3.33325" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg><span>Выход</span></button></div>
 			</header>
 			<main class="main">
 				<section class="first-section">
-					<div class="container"><a class="button mb40" href=""><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<div class="container"><a class="button mb40" href="" data-aos="fade-up"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M7.97461 5.50415L2.91628 10.5625L7.97461 15.6208" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M17.084 10.5625H3.05898" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg>Вернуться в каталог</a>
-						<h1 class="h1 cart__title">Корзина<div class="cart__count" data-total-count>0</div>
+						<h1 class="h1 cart__title" data-aos="fade-up">Корзина<div class="cart__count" data-total-count>0</div>
 						</h1>
-						<div class="cart__body" data-cart-init>
+						<div class="cart__body" data-cart-init data-aos="fade-up">
 							<div class="cart__products">
 								<div class="product-card" data-product="0" data-product-incart="0">
 									<div class="product-card__img" data-product-img><a href="assets/images/product-1.jpeg" data-fancybox="gallery0" data-thumb="assets/images/product-1.jpeg">
@@ -523,7 +544,7 @@
 			<div class="modal service-modal" data-fancy-modal="ask">
 				<div class="service-modal__main">
 					<div class="h2">Задать вопрос</div>
-					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input required><span class="form-placeholder">Телефон</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><label class="checkbox__label">
+					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-parsley-tel-length="11" required><span class="form-placeholder">Телефон</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><label class="checkbox__label">
 							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="23" height="23" rx="4" fill="black"></rect>
 									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -537,18 +558,59 @@
 			</div>
 			<div class="modal service-modal" data-fancy-modal="login">
 				<div class="service-modal__main">
-					<div class="h2">Вход</div>
-					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span></label><label class="checkbox__label">
+					<div class="login-top">
+						<div class="h2">Вход</div>
+						<div class="h2 login-top__link" data-fancy-button="registration">Регистрация</div>
+					</div>
+					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span></label>
+						<div class="login-recovery" data-fancy-button="recovery">Восстановить пароль</div><label class="checkbox__label">
 							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="23" height="23" rx="4" fill="black"></rect>
 									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
-						</label><input class="button black service-modal__submit" type="submit" value="Войти"></form>
+						</label><input class="button black service-modal__submit" type="submit" value="Войти">
+					</form>
+				</div>
+			</div>
+			<div class="modal service-modal" data-fancy-modal="registration">
+				<div class="service-modal__main">
+					<div class="login-top">
+						<div class="h2 login-top__link" data-fancy-button="login">Вход</div>
+						<div class="h2">Регистрация</div>
+					</div>
+					<form class="service-modal__form" data-parsley-validate data-registration-form><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Полное название юридического лица</span></label><label class="form-label"><input class="form-input" type="number" data-input required><span class="form-placeholder">ИНН</span></label><label class="form-label"><input class="form-input" type="number" data-input required><span class="form-placeholder">КПП</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Юридический адрес</span></label>
+						<div class="registration-subtitle">Контактное лицо</div><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-parsley-tel-length="11" required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" id="profile-password" type="password" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" type="password" data-input data-parsley-equalto="#profile-password" required><span class="form-placeholder">Пароль еще раз</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Войти">
+					</form>
 				</div>
 				<div class="service-modal__response">
-					<div class="h2">Вопрос отправлен</div>
-					<div class="service-modal__response-txt">Наш менеджер свяжется с вами<br>через 15 минут</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
+					<div class="h2">Заявка на регистрацию<br>отправлена</div>
+					<div class="service-modal__response-txt">Мы получили заявку на регистрацию. После проверки, наш менеджер свяжется с вами для подтвреждения заявки.</div><button class="button black service-modal__response-btn" data-fancybox-close>Ок</button>
 				</div>
+			</div>
+			<div class="modal service-modal" data-fancy-modal="recovery">
+				<div class="service-modal__main">
+					<div class="h2">Восстановить пароль</div>
+					<form class="service-modal__form" data-parsley-validate data-recovery-form>
+						<div class="recovery-subtitle">Укажите почту, на которую вы регистрировались</div><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Отправить">
+					</form>
+				</div>
+				<div class="service-modal__response">
+					<div class="h2">Новый пароль отправлен<br>на почту</div>
+					<div class="service-modal__response-txt">ksh@cloudmill.ru</div><button class="button black service-modal__response-btn" data-fancybox-close>Ок</button>
+				</div><button class="recovery-back" data-fancy-button="login"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.97461 5.50415L2.91628 10.5625L7.97461 15.6208" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M17.084 10.5625H3.05898" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg></button>
 			</div>
 			<div class="menu-mobile" data-fancy-modal="menu">
 				<ul class="menu-mobile__nav">
@@ -607,7 +669,7 @@
 							<div class="card-small" data-product="0" data-product-incart="0">
 								<div class="card-small__img"><img src="assets/images/product-1.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Vietnam, 1 кг</div>
+									<div class="card-small__ttl" data-product-ttl>Vietnam, 1 кг</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="0">1 200</span><span>&nbsp;₽</span></span>
 									</div>
@@ -629,7 +691,7 @@
 							<div class="card-small" data-product="1" data-product-incart="1">
 								<div class="card-small__img"><img src="assets/images/product-2.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Espresso Medium, 8 шт</div>
+									<div class="card-small__ttl" data-product-ttl>Espresso Medium, 8 шт</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="1">1 200</span><span>&nbsp;₽</span></span>
 									</div>
@@ -651,7 +713,7 @@
 							<div class="card-small" data-product="2" data-product-incart="2">
 								<div class="card-small__img"><img src="assets/images/product-3.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Burundi Yandaro, 250 г</div>
+									<div class="card-small__ttl" data-product-ttl>Burundi Yandaro, 250 г</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="2">1 200</span><span>&nbsp;₽</span></span>
 									</div>
@@ -673,7 +735,7 @@
 							<div class="card-small" data-product="3" data-product-incart="3">
 								<div class="card-small__img"><img src="assets/images/product-1.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Vietnam, 1 кг</div>
+									<div class="card-small__ttl" data-product-ttl>Vietnam, 1 кг</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="3">1 200</span><span>&nbsp;₽</span></span>
 									</div>
@@ -695,7 +757,7 @@
 							<div class="card-small" data-product="4" data-product-incart="4">
 								<div class="card-small__img"><img src="assets/images/product-2.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Espresso Medium, 8 шт</div>
+									<div class="card-small__ttl" data-product-ttl>Espresso Medium, 8 шт</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="4">1 200</span><span>&nbsp;₽</span></span>
 									</div>
@@ -717,7 +779,7 @@
 							<div class="card-small" data-product="5" data-product-incart="5">
 								<div class="card-small__img"><img src="assets/images/product-3.jpeg" alt=""></div>
 								<div class="card-small__info">
-									<div class="card-small__ttl">Burundi Yandaro, 250 г</div>
+									<div class="card-small__ttl" data-product-ttl>Burundi Yandaro, 250 г</div>
 									<div class="card-small__price">
 										<div class="title">стоимость</div><span class="value"><span data-product-price="5">1 200</span><span>&nbsp;₽</span></span>
 									</div>

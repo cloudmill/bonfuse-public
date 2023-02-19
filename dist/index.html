@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="250.css" rel="stylesheet">
+		<link href="942.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -23,6 +23,7 @@
 					<li><a href="orders-empty">[ЛК] Заказы пустые</a></li>
 					<li><a href="orders-detail">[ЛК] Детальный заказ</a></li>
 					<li><a href="profile">[ЛК] Профиль</a></li>
+					<li><a href="companies">[ЛК] Мои компании</a></li>
 					<li><a href="cart">Корзина</a></li>
 					<li><a href="cart-empty">Корзина пустая</a></li>
 					<li><a href="order">Оформление заказа</a></li>
@@ -42,7 +43,7 @@
 			<div class="modal service-modal" data-fancy-modal="ask">
 				<div class="service-modal__main">
 					<div class="h2">Задать вопрос</div>
-					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input required><span class="form-placeholder">Телефон</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><label class="checkbox__label">
+					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-parsley-tel-length="11" required><span class="form-placeholder">Телефон</span></label><label class="form-label"><textarea class="form-input form-textarea" data-input></textarea><span class="form-placeholder">Сообщение</span></label><label class="checkbox__label">
 							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="23" height="23" rx="4" fill="black"></rect>
 									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -56,18 +57,59 @@
 			</div>
 			<div class="modal service-modal" data-fancy-modal="login">
 				<div class="service-modal__main">
-					<div class="h2">Вход</div>
-					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span></label><label class="checkbox__label">
+					<div class="login-top">
+						<div class="h2">Вход</div>
+						<div class="h2 login-top__link" data-fancy-button="registration">Регистрация</div>
+					</div>
+					<form class="service-modal__form" data-parsley-validate><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="password" data-input required><span class="form-placeholder">Пароль</span></label>
+						<div class="login-recovery" data-fancy-button="recovery">Восстановить пароль</div><label class="checkbox__label">
 							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="23" height="23" rx="4" fill="black"></rect>
 									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
-						</label><input class="button black service-modal__submit" type="submit" value="Войти"></form>
+						</label><input class="button black service-modal__submit" type="submit" value="Войти">
+					</form>
+				</div>
+			</div>
+			<div class="modal service-modal" data-fancy-modal="registration">
+				<div class="service-modal__main">
+					<div class="login-top">
+						<div class="h2 login-top__link" data-fancy-button="login">Вход</div>
+						<div class="h2">Регистрация</div>
+					</div>
+					<form class="service-modal__form" data-parsley-validate data-registration-form><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Полное название юридического лица</span></label><label class="form-label"><input class="form-input" type="number" data-input required><span class="form-placeholder">ИНН</span></label><label class="form-label"><input class="form-input" type="number" data-input required><span class="form-placeholder">КПП</span></label><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">Юридический адрес</span></label>
+						<div class="registration-subtitle">Контактное лицо</div><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-parsley-tel-length="11" required><span class="form-placeholder">Телефон</span></label><label class="form-label"><input class="form-input" id="profile-password" type="password" data-input required><span class="form-placeholder">Пароль</span></label><label class="form-label"><input class="form-input" type="password" data-input data-parsley-equalto="#profile-password" required><span class="form-placeholder">Пароль еще раз</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Войти">
+					</form>
 				</div>
 				<div class="service-modal__response">
-					<div class="h2">Вопрос отправлен</div>
-					<div class="service-modal__response-txt">Наш менеджер свяжется с вами<br>через 15 минут</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
+					<div class="h2">Заявка на регистрацию<br>отправлена</div>
+					<div class="service-modal__response-txt">Мы получили заявку на регистрацию. После проверки, наш менеджер свяжется с вами для подтвреждения заявки.</div><button class="button black service-modal__response-btn" data-fancybox-close>Ок</button>
 				</div>
+			</div>
+			<div class="modal service-modal" data-fancy-modal="recovery">
+				<div class="service-modal__main">
+					<div class="h2">Восстановить пароль</div>
+					<form class="service-modal__form" data-parsley-validate data-recovery-form>
+						<div class="recovery-subtitle">Укажите почту, на которую вы регистрировались</div><label class="form-label"><input class="form-input" type="email" data-input required><span class="form-placeholder">E-mail</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Отправить">
+					</form>
+				</div>
+				<div class="service-modal__response">
+					<div class="h2">Новый пароль отправлен<br>на почту</div>
+					<div class="service-modal__response-txt">ksh@cloudmill.ru</div><button class="button black service-modal__response-btn" data-fancybox-close>Ок</button>
+				</div><button class="recovery-back" data-fancy-button="login"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.97461 5.50415L2.91628 10.5625L7.97461 15.6208" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M17.084 10.5625H3.05898" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg></button>
 			</div>
 			<div class="menu-mobile" data-fancy-modal="menu">
 				<ul class="menu-mobile__nav">
