@@ -65,14 +65,35 @@
 						</div>
 					</section>
 					<section class="advantages">
-						<div class="advantages-banner" data-aos="fade-up"><img class="advantages-banner__back" src="assets/images/advantages-banner.jpeg" alt=""><img class="advantages-banner__txt only-desktop" src="assets/images/advantages-banner-txt.png" alt=""><img class="advantages-banner__txt tablet-and-mobile" src="assets/images/advantages-banner-txt-mob.png" alt=""></div>
+						<div class="advantages-top" data-aos="fade-up">
+							<div class="advantages-top__card">
+								<picture class="advantages-top__img">
+									<source srcset="assets/images/webp/advantages-top-0.webp" type="image/webp" /><img src="assets/images/advantages-top-0.jpeg" alt="" />
+								</picture>
+								<div class="advantages-top__title"><span>Скидка 35%</span> на любой кофе из нашего<br />прайса при первом заказе</div><button class="button black only-mobile" data-fancy-button="apply">Оставить заявку</button>
+							</div>
+							<div class="advantages-top__card">
+								<picture class="advantages-top__img">
+									<source srcset="assets/images/webp/advantages-top-1.webp" type="image/webp" /><img src="assets/images/advantages-top-1.jpeg" alt="" />
+								</picture>
+								<div class="advantages-top__title">Фасовка кофе в дрип пакеты<br /><span>от 10 руб за штуку</span></div><button class="button black only-mobile" data-fancy-button="apply">Оставить заявку</button>
+							</div>
+							<div class="advantages-top__card">
+								<picture class="advantages-top__img">
+									<source srcset="assets/images/webp/advantages-top-2.webp" type="image/webp" /><img src="assets/images/advantages-top-2.jpeg" alt="" />
+								</picture>
+								<div class="advantages-top__title">СТМ обжарка кофе <span>от 30 руб за кг</span></div><button class="button black only-mobile" data-fancy-button="apply">Оставить заявку</button>
+							</div>
+							<div class="advantages-top__line left only-desktop"></div><button class="advantages-top__button button black only-desktop" data-fancy-button="apply">Оставить заявку</button>
+							<div class="advantages-top__line right only-desktop"></div>
+						</div>
 						<div class="advantages-table" data-aos="fade-up">
 							<div class="advantages-card"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="16" cy="16" r="16" fill="black"></circle>
 									<path d="M11.3333 16.8333L14.0606 19.3333L21.3333 12.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 								</svg>
 								<div class="advantages-card__img"><img class="advantages-card__img-main" src="assets/images/advantages-card-1.jpeg" alt=""></div>
-								<div class="advantages-card__ttl"><span>2 собственных цеха</span> с суммарной производительностью<br />до <span>100 тон</span> кофе в месяц</div>
+								<div class="advantages-card__ttl"><span>2 собственных цеха</span> с суммарной производительностью<br /><span>до 250 тон</span> кофе в месяц</div>
 							</div>
 							<div class="advantages-card"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="16" cy="16" r="16" fill="black"></circle>
@@ -414,6 +435,21 @@
 						<source srcset="assets/images/webp/lk-modal-mob.webp" type="image/webp" /><img src="assets/images/lk-modal-mob.jpeg" alt="" />
 					</picture>
 					<div class="lk-modal-buttons"><button class="button black" data-fancybox-close>Понятно, спасибо</button><button class="button" data-fancy-button="login">Войти или зарегистрироваться</button></div>
+				</div>
+			</div>
+			<div class="modal service-modal" data-fancy-modal="apply">
+				<div class="service-modal__main">
+					<div class="h2">Оставить заявку</div>
+					<form class="service-modal__form" data-parsley-validate data-apply-form><label class="form-label"><input class="form-input" data-input required><span class="form-placeholder">ФИО</span></label><label class="form-label"><input class="form-input" type="tel" data-input data-phone-input data-parsley-tel-length="11" required><span class="form-placeholder">Телефон</span></label><label class="checkbox__label">
+							<div class="checkbox black"><input class="checkbox__input" type="checkbox" id="checkbox" required checked="checked"><svg class="checkbox__done" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="23" height="23" rx="4" fill="black"></rect>
+									<path d="M6.99927 12.1667L9.72654 14.6667L16.9993 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></div><span class="checkbox-caption">Согласен с <a href="">условиями обработки персональных данных</a></span>
+						</label><input class="button black service-modal__submit" type="submit" value="Отправить"></form>
+				</div>
+				<div class="service-modal__response">
+					<div class="h2">Заявка отправлена</div>
+					<div class="service-modal__response-txt">Наш менеджер свяжется с вами<br>через 15 минут</div><button class="button black service-modal__response-btn" data-fancybox-close>Понятно, спасибо</button>
 				</div>
 			</div>
 		</div>
